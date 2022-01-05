@@ -1,6 +1,5 @@
-/* eslint-disable no-unused-vars */
+/* eslint-disable no-undef */
 /* eslint-disable strict */
-/* globals Chart:false, feather:false */
 
 (function () {
   "use strict";

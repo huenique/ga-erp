@@ -1,6 +1,5 @@
 import "./static/index.css";
 import "./static/bootstrap.min.css";
-import "./utils/icons";
 
 import React from "react";
 import ReactDOM from "react-dom";
