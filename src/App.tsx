@@ -1,8 +1,6 @@
-import "./static/App.css";
-
 import Navbar from "./components/Navbar";
+import Dashboard from "./containers/Dashboard/Dashboard";
 import useScript from "./hooks/useScript";
-import Dashboard from "./pages/Dashboard";
 
 function App() {
   useScript(

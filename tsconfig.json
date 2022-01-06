@@ -18,8 +18,9 @@
   },
   "include": [
     "src",
-    "tests/App.test.tsx",
+    "src/App.test.tsx",
     "src/utils/icons.tsx",
-    "public/js/icons.js"
+    "public/js/icons.js",
+    "src/setupTests.ts"
   ]
 }
