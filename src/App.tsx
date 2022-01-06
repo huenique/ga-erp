@@ -1,5 +1,9 @@
+import { Route, Routes } from "react-router-dom";
+
+import Nav from "./components/Nav";
 import Navbar from "./components/Navbar";
-import Dashboard from "./containers/Dashboard/Dashboard";
+import Dashboard from "./containers/Dashboard";
+import Products from "./containers/Products";
 import useScript from "./hooks/useScript";
 
 function App() {
@@ -9,13 +13,16 @@ function App() {
     "anonymous",
     true
   );
-  useScript("js/feather.min.js", undefined, undefined, false);
-  useScript("js/icons.js", undefined, undefined, false);
 
   return (
     <>
       <Navbar />
-      <Dashboard />
+      <Routes>
+        <Route path="/" element={<Nav />}>
+          <Route index element={<Dashboard />} />
+          <Route path="products" element={<Products />} />
+        </Route>
+      </Routes>
     </>
   );
 }
