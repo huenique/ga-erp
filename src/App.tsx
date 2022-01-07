@@ -17,12 +17,16 @@ function App() {
   return (
     <>
       <Navbar />
-      <Routes>
-        <Route path="/" element={<Nav />}>
-          <Route index element={<Dashboard />} />
-          <Route path="products" element={<Products />} />
-        </Route>
-      </Routes>
+      <div className="container-fluid">
+        <div className="row">
+          <Routes>
+            <Route path="/" element={<Nav />}>
+              <Route index element={<Dashboard />} />
+              <Route path="products" element={<Products />} />
+            </Route>
+          </Routes>
+        </div>
+      </div>
     </>
   );
 }
