@@ -2,6 +2,8 @@ import "./index.css";
 
 import { Component } from "react";
 
+import Card from "../../components/Card";
+
 class Products extends Component {
   constructor(props: any) {
     super(props);
@@ -33,65 +35,26 @@ class Products extends Component {
         <div className="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
           <h1 className="h2">Products</h1>
         </div>
-        <table className="table table-hover" id="products-table">
-          <thead>
-            <tr>
-              <th scope="col">
-                <input
-                  className="form-check-input"
-                  type="checkbox"
-                  value=""
-                  aria-label="Checkbox for following text input"
-                  onClick={this.toggleCheckbox}
-                  id="main-checkbox"
-                />
-              </th>
-              <th scope="col">First</th>
-              <th scope="col">Last</th>
-              <th scope="col">Handle</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th scope="row">
-                <input
-                  className="form-check-input"
-                  type="checkbox"
-                  value=""
-                  aria-label="Checkbox for following text input"
-                />
-              </th>
-              <td>Mark</td>
-              <td>Otto</td>
-              <td>@mdo</td>
-            </tr>
-            <tr>
-              <th scope="row">
-                <input
-                  className="form-check-input"
-                  type="checkbox"
-                  value=""
-                  aria-label="Checkbox for following text input"
-                />
-              </th>
-              <td>Jacob</td>
-              <td>Thornton</td>
-              <td>@fat</td>
-            </tr>
-            <tr>
-              <th scope="row">
-                <input
-                  className="form-check-input"
-                  type="checkbox"
-                  value=""
-                  aria-label="Checkbox for following text input"
-                />
-              </th>
-              <td colSpan={2}>Larry the Bird</td>
-              <td>@twitter</td>
-            </tr>
-          </tbody>
-        </table>
+        <div className="card-container">
+          <Card
+            title="Window"
+            subtitle=""
+            text=""
+            link="/window-components"
+            linkName="Components"
+            anotherLink="/window-products"
+            anotherLinkName="Listing"
+          />
+          <Card
+            title="Door"
+            subtitle=""
+            text=""
+            link="/door-components"
+            linkName="Components"
+            anotherLink="/door-products"
+            anotherLinkName="Listing"
+          />
+        </div>
       </main>
     );
   }

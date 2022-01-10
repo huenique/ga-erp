@@ -1,3 +1,5 @@
+import "./index.css";
+
 import { Link, Outlet } from "react-router-dom";
 
 import useScript from "../../hooks/useScript";

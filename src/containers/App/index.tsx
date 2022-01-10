@@ -1,10 +1,12 @@
+import "./index.css";
+
 import { Route, Routes } from "react-router-dom";
 
-import Nav from "./components/Nav";
-import Navbar from "./components/Navbar";
-import Dashboard from "./containers/Dashboard";
-import Products from "./containers/Products";
-import useScript from "./hooks/useScript";
+import Nav from "../../components/Nav";
+import Navbar from "../../components/Navbar";
+import useScript from "../../hooks/useScript";
+import Dashboard from "../Dashboard";
+import Products from "../Products";
 
 function App() {
   useScript(

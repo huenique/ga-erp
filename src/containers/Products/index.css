@@ -1,0 +1,11 @@
+.card {
+  margin: 1%;
+}
+
+.card-link {
+  text-decoration: none;
+}
+
+.card-container {
+  display: flex;
+}
