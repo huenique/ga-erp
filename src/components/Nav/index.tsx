@@ -23,7 +23,7 @@ function Nav() {
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/">
+              <Link className="nav-link" to="/orders">
                 <span data-feather="file"></span>
                 Orders
               </Link>
@@ -35,9 +35,9 @@ function Nav() {
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/">
+              <Link className="nav-link" to="/clients">
                 <span data-feather="users"></span>
-                Customers
+                Clients
               </Link>
             </li>
             <li className="nav-item">

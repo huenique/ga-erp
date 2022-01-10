@@ -3,6 +3,7 @@ import "./index.css";
 import { Component } from "react";
 
 import Card from "../../components/Card";
+import PageTitle from "../../components/PageTitle";
 
 class Products extends Component {
   constructor(props: any) {
@@ -31,10 +32,8 @@ class Products extends Component {
 
   render() {
     return (
-      <main className="col-md-9 ms-sm-auto col-lg-10 px-md-4">
-        <div className="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-          <h1 className="h2">Products</h1>
-        </div>
+      <>
+        <PageTitle title="Products" />
         <div className="card-container">
           <Card
             title="Window"
@@ -55,7 +54,7 @@ class Products extends Component {
             anotherLinkName="Listing"
           />
         </div>
-      </main>
+      </>
     );
   }
 }

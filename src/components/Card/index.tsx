@@ -9,7 +9,7 @@ function Card(props: cardprops) {
         <h5 className="card-title">{props.title}</h5>
         <h6 className="card-subtitle mb-2 text-muted">{props.subtitle}</h6>
         <p className="card-text">{props.text}</p>
-        <Link to={props.linkName} className="card-link">
+        <Link to={props.link} className="card-link">
           {props.linkName}
         </Link>
         <Link to={props.anotherLink} className="card-link">

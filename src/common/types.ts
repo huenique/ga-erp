@@ -1,3 +1,11 @@
+interface Accordion {
+  accordId: string;
+  headerId: string;
+  btnName: string;
+  contentId: string;
+  body: string;
+}
+
 interface Card {
   title: string;
   subtitle: string;
@@ -8,12 +16,8 @@ interface Card {
   anotherLinkName: string;
 }
 
-interface Accordion {
-  accordId: string;
-  headerId: string;
-  btnName: string;
-  contentId: string;
-  body: string;
+interface PageTitle {
+  title: string;
 }
 
-export type { Accordion, Card };
+export type { Accordion, Card, PageTitle };
